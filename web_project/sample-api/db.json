@@ -1,0 +1,24 @@
+{
+  "products": [
+    {
+      "name": "rewrew",
+      "price": "4534534543",
+      "description": "5erwerwerwe",
+      "id": "0VnJiIyFUtQ87xW22Cc36"
+    },
+    {
+      "name": "ewrqqqqq",
+      "price": "234444444444",
+      "description": " werwerwerwerwerwerwerwerwerwerwer",
+      "id": "oDuNZh9I8n_o0rXciVUlg"
+    }
+  ],
+  "users": [
+    {
+      "id": "5YsFNN42B14VYHhpDyizn",
+      "name": "Administrator",
+      "email": "admin@gmail.com",
+      "password": 123456
+    }
+  ]
+}
