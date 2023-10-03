@@ -25,7 +25,7 @@
           <li v-for="option in options" :key="option.name">
             <router-link
               :to="option.route"
-              class="nav-link px-2 link-secondary"
+              class="nav-link px-2 link-secondary text-dark"
             >
               {{ option.name }}
             </router-link>
@@ -81,13 +81,6 @@ export default {
   setup() {
     const options = reactive([
       {
-        name: "Home",
-        route: {
-          name: "home",
-          params: {},
-        },
-      },
-      {
         name: "Products",
         route: {
           name: "Products",
@@ -112,3 +105,14 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+header {
+  background: rgb(34, 193, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 193, 195, 1) 0%,
+    rgba(253, 187, 45, 0.6530987394957983) 100%
+  );
+}
+</style>

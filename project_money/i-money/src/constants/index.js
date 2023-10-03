@@ -4,14 +4,14 @@ export const PROFILE_OPTION = [
   {
     name: "Edit User",
     route: {
-      name: "home",
+      name: "ProfielPage",
       params: {},
     },
   },
   {
     name: "My Wallet",
     route: {
-      name: "home",
+      name: "ProfielPage",
       params: {},
     },
   },

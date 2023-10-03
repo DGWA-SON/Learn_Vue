@@ -11,12 +11,6 @@ const requiredAuth = (to, from, next) => {
 
 const routes = [
   {
-    path: "/",
-    name: "home",
-    component: () =>
-      import(/* webpackChunkName: "home" */ "../views/homePage.vue"),
-  },
-  {
     path: "/register",
     name: "registerPage",
     meta: {
@@ -35,7 +29,7 @@ const routes = [
       import(/* webpackChunkName: "login" */ "../views/loginPage.vue"),
   },
   {
-    path: "/profile",
+    path: "/",
     name: "ProfielPage",
     component: () =>
       import(/* webpackChunkName: "profile" */ "../views/profilePage.vue"),

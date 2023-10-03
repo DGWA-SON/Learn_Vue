@@ -1,43 +1,4 @@
 <template>
-  <!-- <div class="login_wrap">
-    <form @submit.prevent="onSubmit">
-      <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          v-model="email"
-        />
-        <div id="emailHelp" class="form-text">
-          We'll never share your email with anyone else.
-        </div>
-      </div>
-      <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-          v-model="password"
-        />
-      </div>
-      <div class="button_submit">
-        <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="sumbit" class="btn btn-primary">
-          <router-link :to="{ name: 'registerPage', params: {} }"
-            >SignIn</router-link
-          >
-        </button>
-      </div>
-    </form>
-
-    <div class="alert alert-danger mt-5" role="alert" v-if="error">
-      <span>{{ error }}</span>
-    </div>
-  </div> -->
-
   <section class="wrapper">
     <div class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">

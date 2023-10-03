@@ -2,15 +2,15 @@
   <div class="product-list">
     <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
       <h2 class="display-4 text-primary">Product Management</h2>
-      <p><router-link to="/addproducts">Add Product</router-link></p>
+      <p><router-link to="/addproducts">Add new</router-link></p>
     </div>
 
-    <div class="container">
+    <div class="container mt-5">
       <div class="card-deck mb-3 text-center">
         <table class="table table-bordered">
           <thead>
             <tr>
-              <th scope="col">#</th>
+              <th scope="col">Id</th>
               <th scope="col">Product name</th>
               <th scope="col">Price</th>
               <th scope="col">Handle</th>
@@ -19,8 +19,8 @@
           <tbody>
             <tr v-for="getProduct in apiData" :key="getProduct.id">
               <th scope="row">{{ getProduct.id }}</th>
-              <td>{{ getProduct.name }}</td>
-              <td>{{ getProduct.price }}</td>
+              <td>{{ getProduct.dataName }}</td>
+              <td>{{ getProduct.dataprice }}</td>
               <td>
                 <!-- Chuyen trang theo route goi theo id -->
                 <button class="btn btn-primary">Edit</button>
@@ -59,9 +59,12 @@ export default {
 
     const onDelete = async (id) => {
       await deleteDoc(doc(projectFirestore, "products", id));
+      const updatedProducts = apiData.value.filter(
+        (getProduct) => getProduct.id !== id
+      );
+      apiData.value = updatedProducts;
       console.log(id);
     };
-
     onMounted(fetchData);
 
     return {
